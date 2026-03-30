@@ -1,4 +1,7 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import Campustrade from "../assets/screencapture-campus-trade-frontend-netlify-app-2026-03-09-19_20_15.png";
+import Thinkbox from "../assets/screencapture-localhost-5173-2026-03-09-11_10_12.png";
+import Moodbuddy from "../assets/screencapture-moodbuddyapp-netlify-app-2026-03-09-19_35_27.png";
 
 const Project = () => {
   return (
@@ -15,7 +18,7 @@ const Project = () => {
       <div className="grid grid-cols-2 gap-12 m-12 mb-0">
         <div className=" bg-white rounded-3xl mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
           <img
-            src="src\assets\screencapture-moodbuddyapp-netlify-app-2026-03-09-19_35_27.png"
+            src={Moodbuddy}
             alt="MoodBuddy"
             className="h-70 w-full object-cover rounded-t-2xl "
           ></img>
@@ -71,7 +74,7 @@ const Project = () => {
         </div>
         <div className=" bg-white rounded-3xl mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
           <img
-            src="src\assets\screencapture-campus-trade-frontend-netlify-app-2026-03-09-19_20_15.png"
+            src={Campustrade}
             alt="Campus Trade"
             className="h-70 w-full object-cover rounded-t-2xl "
           ></img>
@@ -129,7 +132,7 @@ const Project = () => {
         </div>
         <div className=" bg-white rounded-3xl mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
           <img
-            src="src\assets\screencapture-localhost-5173-2026-03-09-11_10_12.png"
+            src={Thinkbox}
             alt="Think Box"
             className="h-70 w-full object-cover rounded-t-2xl "
           ></img>

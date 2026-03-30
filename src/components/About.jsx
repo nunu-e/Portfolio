@@ -1,6 +1,7 @@
 import { IoColorPaletteOutline, IoPeopleOutline } from "react-icons/io5";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { VscCode } from "react-icons/vsc";
+import Profile from "../assets/Elbethel.jpg";
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
       >
         <div className="relative transition-transform duration-500  hover:scale-105">
           <img
-            src="src\assets\Elbethel.jpg"
+            src={Profile}
             alt="Elbethel Ambachew"
             className="w-80 h-75 border-4 border-white rounded-3xl shadow-2xl"
           />
