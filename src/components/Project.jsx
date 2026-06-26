@@ -130,65 +130,6 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-white rounded-3xl mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
-          <img
-            src={Thinkbox}
-            alt="Think Box"
-            className="h-70 w-full object-cover rounded-t-2xl "
-          ></img>
-          <div className="p-10">
-            <h1 className="text-[#51253be4] font-bold mb-2 text-xl">
-              Think Box
-            </h1>
-            <p>
-              A simple and secure note-taking web application designed to help
-              users capture and organize their thoughts in one place. It allows
-              users to create, edit, and manage personal notes through a clean
-              and intuitive interface. The platform includes user authentication
-              with email verification to ensure accounts remain safe and
-              private. The goal is to make storing ideas, reminders, and
-              important information easy, reliable, and accessible whenever
-              users need it.
-            </p>
-            <div className="flex mb-3">
-              <div className="p-3  text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 ml-0 rounded-3xl transition-all hover:shadow-2xl">
-                React
-              </div>
-              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-                NodeJs
-              </div>
-              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-                MongoDb
-              </div>
-            </div>
-            <div className="flex gap-5 text-[#9a597b]">
-              <a
-                href="https://github.com/nunu-e/think-box-frontend.git"
-                target="_blank"
-                className="flex justify-center gap-3"
-              >
-                <FaGithub className="text-xl" />
-                <span>Frontend Code</span>
-              </a>
-              <a
-                href="https://github.com/nunu-e/think-box-backend.git"
-                target="_blank"
-                className="flex justify-center gap-3"
-              >
-                <FaGithub className="text-xl" />
-                <span>Backend Code</span>
-              </a>
-              <a
-                href="https://think-box.netlify.app/"
-                target="_blank"
-                className="flex justify-center gap-3"
-              >
-                <FaExternalLinkAlt className="text-xl" />
-                <span>Live Demo</span>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
