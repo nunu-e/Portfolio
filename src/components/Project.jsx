@@ -46,6 +46,14 @@ const Project = () => {
             </div>
             <div className="flex gap-5 text-[#9a597b]">
               <a
+                href="https://moodbuddyapp.netlify.app/"
+                target="_blank"
+                className="flex justify-center gap-3"
+              >
+                <FaExternalLinkAlt className="text-xl" />
+                <span>Live Demo</span>
+              </a>
+              <a
                 href="https://github.com/nunu-e/mood-buddy-frontend.git"
                 target="_blank"
                 className="flex justify-center gap-3"
@@ -61,14 +69,7 @@ const Project = () => {
                 <FaGithub className="text-xl" />
                 <span>Backend Code</span>
               </a>
-              <a
-                href="https://moodbuddyapp.netlify.app/"
-                target="_blank"
-                className="flex justify-center gap-3"
-              >
-                <FaExternalLinkAlt className="text-xl" />
-                <span>Live Demo</span>
-              </a>
+              
             </div>
           </div>
         </div>
@@ -104,6 +105,14 @@ const Project = () => {
             </div>
             <div className="flex gap-5 text-[#9a597b]">
               <a
+                href="https://campus-trade-frontend.netlify.app/"
+                target="_blank"
+                className="flex justify-center gap-3"
+              >
+                <FaExternalLinkAlt className="text-xl" />
+                <span>Live Demo</span>
+              </a>
+              <a
                 href="https://github.com/nunu-e/campus-trade-frontend.git"
                 target="_blank"
                 className="flex justify-center gap-3"
@@ -119,14 +128,7 @@ const Project = () => {
                 <FaGithub className="text-xl" />
                 <span>Backend Code</span>
               </a>
-              <a
-                href="https://campus-trade-frontend.netlify.app/"
-                target="_blank"
-                className="flex justify-center gap-3"
-              >
-                <FaExternalLinkAlt className="text-xl" />
-                <span>Live Demo</span>
-              </a>
+              
             </div>
           </div>
         </div>
