@@ -1,8 +1,8 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import Campustrade from "../assets/screencapture-campus-trade-frontend-netlify-app-2026-03-09-19_20_15.png";
-import Thinkbox from "../assets/screencapture-localhost-5173-2026-03-09-11_10_12.png";
-import Moodbuddy from "../assets/screencapture-moodbuddyapp-netlify-app-2026-03-09-19_35_27.png";
-
+import Moodbuddy from "../assets/Screenshot 2026-06-02 110152.png";
+import Campustrade from "../assets/Screenshot 2026-07-01 224024.png";
+import EloraRestaurant from "../assets/Screenshot 2026-07-01 224234.png";
+import FlappyBird from "../assets/Screenshot 2026-07-01 230326.png";
 const Project = () => {
   return (
     <div id="project" className="bg-[#fef7f9] pt-25">
@@ -69,7 +69,6 @@ const Project = () => {
                 <FaGithub className="text-xl" />
                 <span>Backend Code</span>
               </a>
-              
             </div>
           </div>
         </div>
@@ -128,7 +127,108 @@ const Project = () => {
                 <FaGithub className="text-xl" />
                 <span>Backend Code</span>
               </a>
-              
+            </div>
+          </div>
+        </div>
+        <div className=" bg-white rounded-3xl mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
+          <img
+            src={EloraRestaurant}
+            alt="Elora Restaurant Management System"
+            className="h-70 w-full object-cover rounded-t-2xl "
+          ></img>
+          <div className="p-10">
+            <h1 className="text-[#51253be4] font-bold mb-2 text-xl">
+              Elora Restaurant Management System
+            </h1>
+
+            <p>
+              A full-stack restaurant management web application designed to
+              simplify restaurant operations and enhance the customer
+              experience. Users can browse the menu, place food orders, reserve
+              tables, rate meals, and securely manage their accounts. An admin
+              dashboard allows administrators to manage menu items, customer
+              orders, and reservations through an intuitive interface.
+            </p>
+
+            <div className="flex flex-wrap mb-3">
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 ml-0 rounded-3xl transition-all hover:shadow-2xl">
+                PHP
+              </div>
+
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
+                MySQL
+              </div>
+
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
+                HTML
+              </div>
+
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
+                CSS
+              </div>
+
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
+                JavaScript
+              </div>
+            </div>
+
+            <div className="flex gap-5 text-[#9a597b]">
+              <a
+                href="https://github.com/BethlehemFetene/Elora-restaurant.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center gap-3"
+              >
+                <FaGithub className="text-xl" />
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-white rounded-3xl mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
+          <img
+            src={FlappyBird}
+            alt="Flappy Bird"
+            className="h-70 w-full object-cover rounded-t-2xl "
+          ></img>
+          <div className="p-10">
+            <h1 className="text-[#51253be4] font-bold mb-2 text-xl">
+              Flappy Bird
+            </h1>
+
+            <p>
+              A desktop recreation of the classic Flappy Bird game developed
+              using C++, OpenGL, and GLUT. Players control the bird by
+              navigating through a series of obstacles while avoiding
+              collisions. The project demonstrates computer graphics concepts,
+              real-time rendering, animation, collision detection, and
+              event-driven programming.
+            </p>
+
+            <div className="flex flex-wrap mb-3">
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 ml-0 rounded-3xl transition-all hover:shadow-2xl">
+                C++
+              </div>
+
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
+                OpenGL
+              </div>
+
+              <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
+                GLUT
+              </div>
+            </div>
+
+            <div className="flex gap-5 text-[#9a597b]">
+              <a
+                href="https://github.com/nunu-e/flappy_bird.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center gap-3"
+              >
+                <FaGithub className="text-xl" />
+                <span>Source Code</span>
+              </a>
             </div>
           </div>
         </div>

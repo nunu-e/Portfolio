@@ -23,12 +23,54 @@ const Footer = () => {
             Quick Links
           </h1>
           <div className="flex flex-col gap-7">
-            <span className="text-[#9a597b] ">Home</span>
-            <span className="text-[#9a597b] ">About</span>
-            <span className="text-[#9a597b] ]">Experience</span>
-            <span className="text-[#9a597b] ">Skills</span>
-            <span className="text-[#9a597b] ">Projects</span>
-            <span className="text-[#9a597b] ">Contact</span>
+            <span className="text-[#9a597b] ">
+              <a
+                href="#home"
+                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+              >
+                Home
+              </a>
+            </span>
+            <span className="text-[#9a597b] ">
+              <a
+                href="#about"
+                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+              >
+                About
+              </a>
+            </span>
+            <span className="text-[#9a597b] ">
+              <a
+                href="#experience"
+                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+              >
+                Experience
+              </a>
+            </span>
+            <span className="text-[#9a597b] ">
+              <a
+                href="#skills"
+                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+              >
+                Skills
+              </a>
+            </span>
+            <span className="text-[#9a597b] ">
+              <a
+                href="#project"
+                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+              >
+                Projects
+              </a>
+            </span>
+            <span className="text-[#9a597b] ">
+              <a
+                href="#contact"
+                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+              >
+                Contact
+              </a>
+            </span>
           </div>
         </div>
         <div>

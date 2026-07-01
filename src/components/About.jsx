@@ -21,7 +21,7 @@ const About = () => {
           <img
             src={Profile}
             alt="Elbethel Ambachew"
-            className="w-80 h-75 border-4 border-white rounded-3xl shadow-2xl"
+            className="w-60 h-55 border-4 border-white rounded-3xl shadow-2xl"
           />
           <div
             className="text-[#9a597b] text-sm text-center absolute bottom-0 right-0 bg-white translate-y-1/2 translate-x-1/2 p-3 rounded-2xl shadow-2xl"
