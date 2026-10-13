@@ -1,157 +1,157 @@
+import { createElement } from "react";
 import {
-  FaAws,
+  FaBrain,
+  FaCheckCircle,
+  FaCode,
   FaDatabase,
   FaDocker,
-  FaNodeJs,
-  FaReact,
+  FaExchangeAlt,
+  FaMobileAlt,
   FaServer,
-  FaWrench,
+  FaUsers,
+  FaVial,
+  FaChartLine,
 } from "react-icons/fa";
-import { GoPackage } from "react-icons/go";
-import { IoIosGitBranch } from "react-icons/io";
-import { IoColorPaletteOutline } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiJest, SiMongodb } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import {
+  SiDart,
+  SiExpress,
+  SiFirebase,
+  SiFlutter,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiMongodb,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+} from "react-icons/si";
 import { TbBrandJavascript, TbBrandMysql, TbWorld } from "react-icons/tb";
+import { RiTailwindCssFill } from "react-icons/ri";
+
+const categories = [
+  {
+    title: "Frontend Development",
+    description: "Building responsive, interactive user interfaces.",
+    Icon: FaCode,
+    skills: [
+      ["React", SiReact],
+      ["JavaScript", TbBrandJavascript],
+      ["HTML5", SiHtml5],
+      ["CSS3", TbWorld],
+      ["Tailwind CSS", RiTailwindCssFill],
+    ],
+  },
+  {
+    title: "Backend Development",
+    description:
+      "Building application logic, APIs, and server-side functionality.",
+    Icon: FaServer,
+    skills: [
+      ["Node.js", FaNodeJs],
+      ["Express.js", SiExpress],
+      ["C#", FaCode],
+      ["ASP.NET Core", FaServer],
+      ["REST APIs", FaExchangeAlt],
+    ],
+  },
+  {
+    title: "Mobile Development",
+    description: "Developing cross-platform mobile applications.",
+    Icon: FaMobileAlt,
+    skills: [
+      ["Flutter", SiFlutter],
+      ["Dart", SiDart],
+      ["Firebase", SiFirebase],
+    ],
+  },
+  {
+    title: "Databases",
+    Icon: FaDatabase,
+    skills: [
+      ["PostgreSQL", SiPostgresql],
+      ["MySQL", TbBrandMysql],
+      ["MongoDB", SiMongodb],
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    Icon: FaBrain,
+    skills: [
+      ["Python", SiPython],
+      ["Machine Learning", FaBrain],
+      ["Data Analysis", FaChartLine],
+    ],
+  },
+  {
+    title: "Tools & Engineering Practices",
+    Icon: FaVial,
+    skills: [
+      ["Git", SiGit],
+      ["GitHub", SiGithub],
+      ["Docker", FaDocker],
+      ["API Testing", FaExchangeAlt],
+      ["Software Testing", FaCheckCircle],
+      ["Agile/Scrum", FaUsers],
+    ],
+  },
+];
 
 const Skills = () => {
   return (
-    <div id="skills" className="bg-[#fef7f9] pt-25">
-      <div data-aos="fade-up" data-aos-offset="40">
-        <h1 className="text-center text-[#51253be4] font-bold text-4xl mb-6 ">
+    <section id="skills" className="bg-page px-6 py-20 sm:px-10 lg:px-16">
+      <div data-aos="fade-up" data-aos-offset="60">
+        <h2 className="mb-5 text-center text-4xl font-bold text-primary">
           Skills
-        </h1>
-        <div className="w-20 h-1 bg-[#f472b6] mx-auto mb-10 rounded-2xl"></div>
+        </h2>
+        <div className="mx-auto mb-10 h-1 w-20 rounded-full bg-accent" />
       </div>
-      <div className="text-[#9a597b] mb-7 text-center">
-        Technologies I work with to bring ideas to life
+      <p className="mx-auto mb-10 max-w-3xl text-center leading-relaxed text-secondary">
+        Technologies and tools I use to build applications, develop backend
+        systems, and explore intelligent solutions.
+      </p>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {categories.map(({ title, description, Icon, skills }, index) => (
+          <article
+            key={title}
+            className="group rounded-3xl border border-border bg-card p-6 shadow-sm transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-accent hover:shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay={(index % 3) * 35}
+          >
+            <div className="mb-4 flex items-center gap-3">
+              <span className="rounded-xl bg-accent p-3 text-2xl text-ink transition-transform duration-200 group-hover:-translate-y-0.5">
+                {createElement(Icon, { "aria-hidden": true })}
+              </span>
+              <div>
+                <p className="text-sm font-semibold tracking-widest text-accent">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
+                <h3 className="font-bold text-primary">{title}</h3>
+              </div>
+            </div>
+            {description && (
+              <p className="mb-4 text-sm leading-relaxed text-secondary">
+                {description}
+              </p>
+            )}
+            <ul className="flex flex-wrap gap-2">
+              {skills.map(([name, SkillIcon]) => (
+                <li
+                  key={name}
+                  className="inline-flex items-center gap-2 rounded-full bg-surface px-3 py-2 text-sm font-medium text-primary"
+                >
+                  {createElement(SkillIcon, {
+                    className: "shrink-0 text-accent-strong",
+                    "aria-hidden": true,
+                  })}
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
-      <div className="grid grid-cols-2 m-12">
-        <div className="p-5 bg-white rounded-3xl mr-12 mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
-          <div className="flex items-center gap-3">
-            <div className="p-3 bg-[#f472b6] rounded-2xl text-white text-3xl">
-              <IoColorPaletteOutline />
-            </div>
-
-            <span className="text-[#51253be4] font-bold mt-2 mb-1 text-xl">
-              Frontend Development
-            </span>
-          </div>
-          <div className="grid grid-cols-2 items-center">
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4] ">
-              <FaReact className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>React</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <TbBrandJavascript className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>Javascript</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8  text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <RiTailwindCssFill className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>TailwindCSS</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <TbWorld className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>HTML/CSS</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-5 bg-white rounded-3xl mb-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
-          <div className="flex items-center gap-3">
-            <div className="p-3 bg-[#f472b6] rounded-2xl text-white text-3xl">
-              <FaServer />
-            </div>
-
-            <span className="text-[#51253be4] font-bold mt-2 mb-1 text-xl">
-              Backend Development
-            </span>
-          </div>
-          <div className="grid grid-cols-2 items-center">
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <FaNodeJs className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>NodeJs</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <GoPackage className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>ExpressJs</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-5 bg-white rounded-3xl mr-12 shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
-          <div className="flex items-center gap-3">
-            <div className="p-3 bg-[#f472b6] rounded-2xl text-white text-3xl">
-              <FaDatabase />
-            </div>
-
-            <span className="text-[#51253be4] font-bold mt-2 mb-1 text-xl">
-              DataBase Development
-            </span>
-          </div>
-          <div className="grid grid-cols-2 items-center">
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8  mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <SiMongodb className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>MongoDb</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <TbBrandMysql className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>MySQL</h3>
-            </div>
-          </div>
-        </div>
-        <div className="p-5 bg-white rounded-3xl shadow-sm transition-all duration-500 hover:scale-100 hover:bg-[#fef7f9] hover:shadow-2xl">
-          <div className="flex items-center gap-3">
-            <div className="p-3 bg-[#f472b6] rounded-2xl text-white text-3xl">
-              <FaWrench />
-            </div>
-
-            <span className="text-[#51253be4] font-bold mt-2 mb-1 text-xl">
-              DevOps & Tools
-            </span>
-          </div>
-          <div className="grid grid-cols-2 items-center">
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <FaAws className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>AWS</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 mt-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <FaDocker className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>Docker</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8  text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <IoIosGitBranch className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>Git</h3>
-            </div>
-            <div className="bg-[#fceaef] p-5 rounded-3xl mr-8 mb-8 text-center transition-all duration-500 hover:scale-105 hover:bg-[#f8dde4]">
-              <SiJest className="mx-auto text-2xl text-[#f472b6]" />
-              <h3>Jest/Testing</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mb-7 text-2xl text-center text-[#51253be4] font-bold">
-        Other Technologies
-      </div>
-      <div className="flex items-center justify-center">
-        <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-          Redux
-        </div>
-        <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-          REST APIs
-        </div>
-        <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0]  shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-          WebSockets
-        </div>
-        <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0]  shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-          Redis
-        </div>
-        <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-          Stripe
-        </div>
-        <div className="p-3 text-center text-[#f472b6] bg-[#ffe0f0] shadow-sm m-3 rounded-3xl transition-all hover:shadow-2xl">
-          Agile/Scrum
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

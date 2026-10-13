@@ -1,110 +1,86 @@
-import { IoColorPaletteOutline, IoPeopleOutline } from "react-icons/io5";
+import { createElement } from "react";
+import { IoPeopleOutline } from "react-icons/io5";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { VscCode } from "react-icons/vsc";
-import Profile from "../assets/Elbethel.jpg";
+import { TbBulb } from "react-icons/tb";
+
+const values = [
+  {
+    title: "Clean Code",
+    description:
+      "Writing readable, maintainable code with a focus on clarity, structure, and reliability.",
+    Icon: VscCode,
+  },
+  {
+    title: "Problem Solving",
+    description:
+      "Breaking down complex problems and building practical solutions through thoughtful engineering.",
+    Icon: MdOutlineRocketLaunch,
+  },
+  {
+    title: "Continuous Learning",
+    description:
+      "Exploring new technologies, strengthening fundamentals, and applying learning through hands-on projects.",
+    Icon: TbBulb,
+  },
+  {
+    title: "Collaboration",
+    description:
+      "Working with others, sharing ideas, and contributing to effective team solutions.",
+    Icon: IoPeopleOutline,
+  },
+];
 
 const About = () => {
   return (
-    <div id="about" className="bg-[#fef7f9] pt-32 pb-2">
-      <div data-aos="fade-up" data-aos-offset="40">
-        <h1 className="text-center text-[#51253be4] font-bold text-4xl mb-6 ">
+    <section id="about" className="bg-surface px-6 py-20 sm:px-10 lg:px-16">
+      <div data-aos="fade-up" data-aos-offset="60">
+        <h2 className="mb-5 text-center text-4xl font-bold text-primary">
           About Me
-        </h1>
-        <div className="w-20 h-1 bg-[#f472b6] mx-auto mb-10 rounded-2xl"></div>
+        </h2>
+        <div className="mx-auto mb-10 h-1 w-20 rounded-full bg-accent" />
       </div>
       <div
-        className=" relative flex justify-center "
-        data-aos="fade-right"
-        data-aos-offset="40"
+        className="mx-auto mb-12 max-w-5xl rounded-3xl bg-card p-6 leading-relaxed text-primary shadow-sm sm:p-10"
+        data-aos="fade-up"
+        data-aos-offset="60"
       >
-        <div className="relative transition-transform duration-500  hover:scale-105">
-          <img
-            src={Profile}
-            alt="Elbethel Ambachew"
-            className="w-60 h-55 border-4 border-white rounded-3xl shadow-2xl"
-          />
-          <div
-            className="text-[#9a597b] text-sm text-center absolute bottom-0 right-0 bg-white translate-y-1/2 translate-x-1/2 p-3 rounded-2xl shadow-2xl"
-            data-aos="zoom-in"
+        <p className="mb-4">
+          I&apos;m Elbethel Ambachew, a Computer Science student at Addis Ababa
+          University with a strong interest in software engineering and building
+          practical, reliable applications.
+        </p>
+        <p className="mb-4">
+          I&apos;ve worked on projects involving mobile application development,
+          backend systems, and database design, gaining hands-on experience
+          turning ideas into functional software. I&apos;m particularly
+          interested in understanding how different parts of a system work
+          together, from user-facing interfaces to the backend logic that powers
+          them.
+        </p>
+        <p>
+          I&apos;m continuously strengthening my engineering skills while
+          exploring how AI and machine learning can solve meaningful,
+          real-world problems.
+        </p>
+      </div>
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2">
+        {values.map(({ title, description, Icon }, index) => (
+          <article
+            key={title}
+            className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-accent hover:shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay={index * 35}
           >
-            <div className="text-[#f472b6]">1+ Years</div> Experience
-          </div>
-        </div>
+            <div className="mb-3 inline-flex rounded-lg bg-surface p-2 text-2xl text-accent-strong">
+              {createElement(Icon, { "aria-hidden": true })}
+            </div>
+            <h3 className="mb-2 font-bold text-primary">{title}</h3>
+            <p className="leading-relaxed text-secondary">{description}</p>
+          </article>
+        ))}
       </div>
-      <div
-        className="m-12 p-8 bg-[#fceaef] rounded-2xl text-[#9a597b]"
-        data-aos="fade-left"
-        data-aos-offset="40"
-      >
-        <h1 className="text-2xl font-bold mb-4 text-[#51253be4] ">
-          Hi, I'm Elbethel Ambachew
-        </h1>
-        <div>
-          <p className="pb-4">
-            A Computer Science student and aspiring full stack developer based
-            in Addis Ababa. I enjoy turning ideas into real applications using
-            technologies like React, Node.js, and modern web tools.
-          </p>
-          <p className="pb-4">
-            I've worked on several academic and personal projects including
-            system applications and web platforms, which helped me build strong
-            foundations in data structures, frontend and backend development,
-            and database design.
-          </p>
-          <p className="pb-4">
-            I'm passionate about learning new technologies, solving challenging
-            problems, and building software that improves people's everyday
-            experiences.
-          </p>
-        </div>
-      </div>
-      <div className="grid grid-cols-2 m-12 gap-6">
-        <div className="bg-white shadow-sm  p-5 rounded-2xl transition-all duration-500  hover:scale-105 hover:shadow-2xl">
-          <div className="text-[#f472b6] inline-block bg-[#fceaef] p-1 rounded-md text-2xl">
-            <VscCode />
-          </div>
-
-          <h2 className="text-[#51253be4] font-bold mt-2 mb-1">Clean code</h2>
-          <p className="text-[#51253be4]">
-            Writing maintainable, scalable code following best practices
-          </p>
-        </div>
-        <div className="bg-white shadow-sm  p-5 rounded-2xl transition-all duration-500  hover:scale-105 hover:shadow-2xl">
-          <div className="text-[#f472b6] inline-block bg-[#fceaef] p-1 rounded-md text-2xl">
-            <IoColorPaletteOutline />
-          </div>
-
-          <h2 className="text-[#51253be4] font-bold mt-2 mb-1">
-            Design Focused
-          </h2>
-          <p className="text-[#51253be4]">
-            Creating beautiful interfaces with attention to detail
-          </p>
-        </div>
-        <div className="bg-white shadow-sm p-5 rounded-2xl transition-all duration-500  hover:scale-105 hover:shadow-2xl">
-          <div className="text-[#f472b6] inline-block bg-[#fceaef] p-1 rounded-md text-2xl">
-            <MdOutlineRocketLaunch />
-          </div>
-
-          <h2 className="text-[#51253be4] font-bold mt-2 mb-1">
-            Fast Delivery
-          </h2>
-          <p className="text-[#51253be4]">
-            Efficient development with modern tools and workflows
-          </p>
-        </div>
-        <div className="bg-white shadow-sm  p-5 rounded-2xl transition-all duration-500  hover:scale-105 hover:shadow-2xl">
-          <div className="text-[#f472b6] inline-block bg-[#fceaef] p-1 rounded-md text-2xl">
-            <IoPeopleOutline />
-          </div>
-
-          <h2 className="text-[#51253be4] font-bold mt-2 mb-1">Team Player</h2>
-          <p className="text-[#51253be4]">
-            Collaborative approach with excellent communication
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

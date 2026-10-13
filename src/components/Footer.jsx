@@ -7,66 +7,66 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#fafafa]   border-t border-t-[#ffc5e3] ">
-      <div className="grid grid-cols-3 p-12 gap-10 border-b border-b-[#ffc5e3]">
+    <footer className="border-t border-border bg-surface">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 border-b border-border p-6 sm:grid-cols-2 sm:p-10 lg:grid-cols-3 lg:p-12">
         <div>
-          <h2 className="text-[#f472b6] font-bold text-2xl mb-4">
+          <h2 className="text-accent font-bold text-2xl mb-4">
             ELBETHEL AMBACHEW
           </h2>
-          <p className="text-[#9a597b]">
+          <p className="text-secondary">
             Building digital experiences with passion and precision. Let's
             create something amazing together.
           </p>
         </div>
-        <div className="text-center">
-          <h1 className=" text-[#f472b6] font-bold text-2xl mb-4 ">
+        <div className="text-left sm:text-center">
+          <h1 className=" text-accent font-bold text-2xl mb-4 ">
             Quick Links
           </h1>
           <div className="flex flex-col gap-7">
-            <span className="text-[#9a597b] ">
+            <span className="text-secondary ">
               <a
                 href="#home"
-                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+                className="cursor-pointer rounded-xl p-2 text-secondary transition-colors duration-200 hover:bg-hover hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
               >
                 Home
               </a>
             </span>
-            <span className="text-[#9a597b] ">
+            <span className="text-secondary ">
               <a
                 href="#about"
-                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+                className="cursor-pointer rounded-xl p-2 text-secondary transition-colors duration-200 hover:bg-hover hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
               >
                 About
               </a>
             </span>
-            <span className="text-[#9a597b] ">
+            <span className="text-secondary ">
               <a
                 href="#experience"
-                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+                className="cursor-pointer rounded-xl p-2 text-secondary transition-colors duration-200 hover:bg-hover hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
               >
                 Experience
               </a>
             </span>
-            <span className="text-[#9a597b] ">
+            <span className="text-secondary ">
               <a
                 href="#skills"
-                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+                className="cursor-pointer rounded-xl p-2 text-secondary transition-colors duration-200 hover:bg-hover hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
               >
                 Skills
               </a>
             </span>
-            <span className="text-[#9a597b] ">
+            <span className="text-secondary ">
               <a
                 href="#project"
-                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+                className="cursor-pointer rounded-xl p-2 text-secondary transition-colors duration-200 hover:bg-hover hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
               >
                 Projects
               </a>
             </span>
-            <span className="text-[#9a597b] ">
+            <span className="text-secondary ">
               <a
                 href="#contact"
-                className="cursor-pointer p-2 rounded-2xl  hover:text-[#f472b6] transition-all duration-200 hover:scale-100 hover:bg-[#fce7f3]"
+                className="cursor-pointer rounded-xl p-2 text-secondary transition-colors duration-200 hover:bg-hover hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
               >
                 Contact
               </a>
@@ -74,35 +74,38 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1 className=" text-[#f472b6] font-bold text-2xl mb-4 ">
+          <h1 className=" text-accent font-bold text-2xl mb-4 ">
             Connect With
           </h1>
-          <div className="flex gap-8 text-[#c95c94] text-2xl">
+          <div className="flex gap-4 text-secondary text-2xl">
             <a
               href="https://github.com/nunu-e"
               target="_blank"
-              className="rounded-full bg-[#fceaef] p-3 transition-all duration-200 hover:bg-[#f472b6] hover:text-white"
+              aria-label="GitHub profile"
+              className="rounded-full bg-page p-3 text-secondary transition-colors duration-200 hover:bg-accent-strong hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
             >
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/elbethel-ambachew-amare"
               target="_blank"
-              className="rounded-full bg-[#fceaef] p-3 transition-all duration-200 hover:bg-[#f472b6] hover:text-white"
+              aria-label="LinkedIn profile"
+              className="rounded-full bg-page p-3 text-secondary transition-colors duration-200 hover:bg-accent-strong hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
             >
               <FaLinkedin />
             </a>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=elbethelambachew2@gmail.com"
               target="_blank"
-              className="rounded-full bg-[#fceaef] p-3 transition-all duration-200 hover:bg-[#f472b6] hover:text-white"
+              aria-label="Email Elbethel"
+              className="rounded-full bg-page p-3 text-secondary transition-colors duration-200 hover:bg-accent-strong hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-strong"
             >
               <FaEnvelope />
             </a>
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-2 text-[#9a597b] p-5">
+      <div className="flex justify-center items-center gap-2 text-secondary p-5">
         <FaRegCopyright />
         <span>2026 Elbethel Ambachew</span>
       </div>

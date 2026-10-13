@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" rx="28" fill="#171A12"/>
+  <path d="M60 95h1080" stroke="#3A4030" stroke-width="2"/>
+  <text x="72" y="67" fill="#F2F1E8" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3">FRAUD DETECTION · MODELING CONCEPT</text>
+
+  <rect x="72" y="142" width="300" height="432" rx="22" fill="#202419" stroke="#3A4030" stroke-width="2"/>
+  <text x="104" y="190" fill="#BBC58A" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="2">TRANSACTION SIGNALS</text>
+  <text x="104" y="246" fill="#B7BBA9" font-family="Inter,Arial,sans-serif" font-size="18">Device activity</text>
+  <rect x="104" y="264" width="228" height="14" rx="7" fill="#343B29"/>
+  <rect x="104" y="264" width="166" height="14" rx="7" fill="#A3AD70"/>
+  <text x="104" y="326" fill="#B7BBA9" font-family="Inter,Arial,sans-serif" font-size="18">Account age</text>
+  <rect x="104" y="344" width="228" height="14" rx="7" fill="#343B29"/>
+  <rect x="104" y="344" width="105" height="14" rx="7" fill="#778252"/>
+  <text x="104" y="406" fill="#B7BBA9" font-family="Inter,Arial,sans-serif" font-size="18">Purchase timing</text>
+  <rect x="104" y="424" width="228" height="14" rx="7" fill="#343B29"/>
+  <rect x="104" y="424" width="192" height="14" rx="7" fill="#BBC58A"/>
+  <text x="104" y="486" fill="#B7BBA9" font-family="Inter,Arial,sans-serif" font-size="18">Location patterns</text>
+  <rect x="104" y="504" width="228" height="14" rx="7" fill="#343B29"/>
+  <rect x="104" y="504" width="138" height="14" rx="7" fill="#778252"/>
+
+  <path d="M394 356h96" stroke="#A3AD70" stroke-width="4" stroke-linecap="round"/>
+  <path d="m476 342 16 14-16 14" stroke="#A3AD70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="520" y="205" width="286" height="298" rx="22" fill="#292E20" stroke="#51583D" stroke-width="2"/>
+  <text x="552" y="254" fill="#BBC58A" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="2">RISK MODELS</text>
+  <rect x="552" y="286" width="222" height="72" rx="14" fill="#202419" stroke="#3A4030" stroke-width="2"/>
+  <circle cx="584" cy="322" r="11" fill="#A3AD70"/>
+  <text x="610" y="329" fill="#F2F1E8" font-family="Inter,Arial,sans-serif" font-size="19">Logistic regression</text>
+  <rect x="552" y="380" width="222" height="72" rx="14" fill="#202419" stroke="#3A4030" stroke-width="2"/>
+  <circle cx="584" cy="416" r="11" fill="#BBC58A"/>
+  <text x="610" y="423" fill="#F2F1E8" font-family="Inter,Arial,sans-serif" font-size="19">Random Forest</text>
+
+  <path d="M828 356h76" stroke="#A3AD70" stroke-width="4" stroke-linecap="round"/>
+  <path d="m890 342 16 14-16 14" stroke="#A3AD70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="930" y="190" width="198" height="330" rx="22" fill="#202419" stroke="#3A4030" stroke-width="2"/>
+  <text x="958" y="234" fill="#BBC58A" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1">MODEL INSIGHTS</text>
+  <path d="M964 449V286M964 449h134" stroke="#51583D" stroke-width="2"/>
+  <rect x="981" y="376" width="23" height="73" rx="5" fill="#778252"/>
+  <rect x="1019" y="334" width="23" height="115" rx="5" fill="#A3AD70"/>
+  <rect x="1057" y="296" width="23" height="153" rx="5" fill="#BBC58A"/>
+  <circle cx="1006" cy="487" r="5" fill="#A3AD70"/>
+  <circle cx="1025" cy="487" r="5" fill="#778252"/>
+  <circle cx="1044" cy="487" r="5" fill="#BBC58A"/>
+</svg>

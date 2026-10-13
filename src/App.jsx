@@ -13,19 +13,30 @@ import Skills from "./components/Skills";
 
 function App() {
   useEffect(() => {
-    Aos.init({ duration: 1400, easing: "ease-in-out", once: true });
+    Aos.init({
+      duration: 650,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 60,
+      disable: () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    });
   }, []);
   return (
     <>
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <NavBar />
-      <Home />
-      <About />
-      <Experience />
-      <Skills />
-      <Project />
-      <Contact />
+      <main id="main-content" tabIndex={-1}>
+        <Home />
+        <About />
+        <Experience />
+        <Skills />
+        <Project />
+        <Contact />
+      </main>
       <Footer />
-      <ToastContainer />
+      <ToastContainer theme="dark" />
     </>
   );
 }
